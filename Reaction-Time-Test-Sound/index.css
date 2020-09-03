@@ -1,0 +1,24 @@
+body {
+    background-color: cadetblue;
+}
+
+.rectangle {
+    height: 75px;
+    width: 100px;
+  }
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.button {
+    margin-top:10px;
+}
+
+.reaction-text-time {
+ font-size: large;   
+}
