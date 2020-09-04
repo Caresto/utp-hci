@@ -2,12 +2,10 @@ values = []
 counter = 0
 
 function changeColor(color) {
-    console.log('here')
     document.getElementById("rectangle").className = "rectangle "+ color;
 }
 
 function main() {
-    console.log("I AM IN MAIN METHOD")
     time = calculate_time()
     start()
     setTimeout(function() { changeColor('red') }, time) ;

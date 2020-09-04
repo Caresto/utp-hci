@@ -1,18 +1,12 @@
 values = []
 counter = 0
 
-function changeColor(color) {
-    console.log('here')
-    document.getElementById("rectangle").className = "rectangle "+ color;
-}
-
 function playAudio() {
     let audio = new Audio('Beep_Short.mp3')
     audio.play()
 }
 
 function main() {
-    console.log("I AM IN MAIN METHOD")
     time = calculate_time()
     start()
     setTimeout(function() { playAudio() }, time) ;
@@ -37,7 +31,6 @@ function end() {
     counter++
     document.getElementById('reaction-text-time').textContent= "Tu tiempo de reacción es de : " + time_reaction + 
     " mili-segundos. " +  "( " + counter + "/10 )"
-    changeColor('blue')
     if (counter === 10) {
         document.getElementById('start').disabled = true;
         document.getElementById('csv').disabled = false;
@@ -51,7 +44,7 @@ function generateCSV() {
     let encodedUri = encodeURI(csvContent);
     let link = document.createElement("a")
     link.setAttribute("href", encodedUri)
-    link.setAttribute("download", "time_reactions.csv")
+    link.setAttribute("download", "sound_time_reactions.csv")
     document.body.appendChild(link);
     link.click()
 }
