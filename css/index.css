@@ -1,14 +1,14 @@
 body {
-    background-color: cadetblue;
+    background-color: #e6e8f4;
 }
 
 .rectangle {
-    height: 75px;
-    width: 100px;
+    height: 300px;
+    width: 75%;
   }
 
 .blue {
-    background-color: blue;
+    background-color: #2b87d1;
 }
 
 .red {
